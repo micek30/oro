@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-05-22.23:26:38.938</IntrospectionTimestamp>
-      <IntrospectionStateNumber>571</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-06-04.23:23:58.467</IntrospectionTimestamp>
+      <IntrospectionStateNumber>632</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -29,136 +29,139 @@
     <schema id="8" parent="2" name="information_schema">
       <ObjectId>12648</ObjectId>
     </schema>
-    <table id="9" parent="3" name="Brands">
+    <sequence id="9" parent="3" name="hibernate_sequence">
+      <ObjectId>16650</ObjectId>
+      <StateNumber>627</StateNumber>
+    </sequence>
+    <table id="10" parent="3" name="Brands">
       <ObjectId>16393</ObjectId>
       <StateNumber>558</StateNumber>
     </table>
-    <table id="10" parent="3" name="CarDesc">
+    <table id="11" parent="3" name="CarDesc">
       <ObjectId>16443</ObjectId>
       <StateNumber>564</StateNumber>
     </table>
-    <table id="11" parent="3" name="Cars">
+    <table id="12" parent="3" name="Cars">
       <ObjectId>16401</ObjectId>
       <StateNumber>566</StateNumber>
     </table>
-    <table id="12" parent="3" name="EmpCar">
+    <table id="13" parent="3" name="EmpCar">
       <ObjectId>16464</ObjectId>
       <StateNumber>566</StateNumber>
     </table>
-    <table id="13" parent="3" name="Employees">
+    <table id="14" parent="3" name="Employees">
       <ObjectId>16456</ObjectId>
       <StateNumber>566</StateNumber>
     </table>
-    <table id="14" parent="3" name="brands">
-      <ObjectId>16479</ObjectId>
-      <StateNumber>567</StateNumber>
+    <table id="15" parent="3" name="brands">
+      <ObjectId>16597</ObjectId>
+      <StateNumber>625</StateNumber>
     </table>
-    <table id="15" parent="3" name="cardesc">
-      <ObjectId>16487</ObjectId>
-      <StateNumber>568</StateNumber>
+    <table id="16" parent="3" name="cardesc">
+      <ObjectId>16605</ObjectId>
+      <StateNumber>626</StateNumber>
     </table>
-    <table id="16" parent="3" name="cars">
-      <ObjectId>16492</ObjectId>
-      <StateNumber>569</StateNumber>
+    <table id="17" parent="3" name="cars">
+      <ObjectId>16610</ObjectId>
+      <StateNumber>626</StateNumber>
     </table>
-    <table id="17" parent="3" name="empcar">
-      <ObjectId>16497</ObjectId>
-      <StateNumber>570</StateNumber>
+    <table id="18" parent="3" name="empcar">
+      <ObjectId>16615</ObjectId>
+      <StateNumber>620</StateNumber>
     </table>
-    <table id="18" parent="3" name="employees">
-      <ObjectId>16502</ObjectId>
-      <StateNumber>571</StateNumber>
+    <table id="19" parent="3" name="employees">
+      <ObjectId>16620</ObjectId>
+      <StateNumber>623</StateNumber>
     </table>
-    <column id="19" parent="9" name="idBrand">
+    <table id="20" parent="3" name="employees_cars">
+      <ObjectId>16594</ObjectId>
+      <StateNumber>623</StateNumber>
+    </table>
+    <column id="21" parent="10" name="idBrand">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>557</StateNumber>
     </column>
-    <column id="20" parent="9" name="name">
+    <column id="22" parent="10" name="name">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <StateNumber>557</StateNumber>
     </column>
-    <column id="21" parent="9" name="localization">
-      <Position>3</Position>
-      <DataType>text|0</DataType>
-      <StateNumber>557</StateNumber>
-    </column>
-    <index id="22" parent="9" name="Brands_pkey">
+    <index id="23" parent="10" name="Brands_pkey">
       <ObjectId>16399</ObjectId>
       <ColNames>idBrand</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="23" parent="9" name="Brands_pkey">
+    <key id="24" parent="10" name="Brands_pkey">
       <ObjectId>16400</ObjectId>
       <ColNames>idBrand</ColNames>
       <UnderlyingIndexName>Brands_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="24" parent="10" name="idDesc">
+    <column id="25" parent="11" name="idDesc">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>563</StateNumber>
     </column>
-    <column id="25" parent="10" name="idCar">
+    <column id="26" parent="11" name="idCar">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>563</StateNumber>
     </column>
-    <column id="26" parent="10" name="color">
+    <column id="27" parent="11" name="color">
       <Position>3</Position>
       <DataType>text|0</DataType>
       <StateNumber>563</StateNumber>
     </column>
-    <column id="27" parent="10" name="year">
+    <column id="28" parent="11" name="year">
       <Position>4</Position>
       <DataType>integer|0</DataType>
       <StateNumber>563</StateNumber>
     </column>
-    <index id="28" parent="10" name="CarDesc_pkey">
+    <index id="29" parent="11" name="CarDesc_pkey">
       <ObjectId>16449</ObjectId>
       <ColNames>idDesc</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="29" parent="10" name="CarDesc_pkey">
+    <key id="30" parent="11" name="CarDesc_pkey">
       <ObjectId>16450</ObjectId>
       <ColNames>idDesc</ColNames>
       <UnderlyingIndexName>CarDesc_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="30" parent="11" name="idCar">
+    <column id="31" parent="12" name="idCar">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>558</StateNumber>
     </column>
-    <column id="31" parent="11" name="idBrand">
+    <column id="32" parent="12" name="idBrand">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>558</StateNumber>
     </column>
-    <column id="32" parent="11" name="idCarDesc">
+    <column id="33" parent="12" name="idCarDesc">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>558</StateNumber>
     </column>
-    <index id="33" parent="11" name="Cars_pkey">
+    <index id="34" parent="12" name="Cars_pkey">
       <ObjectId>16404</ObjectId>
       <ColNames>idCar</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="34" parent="11" name="Cars_pkey">
+    <key id="35" parent="12" name="Cars_pkey">
       <ObjectId>16405</ObjectId>
       <ColNames>idCar</ColNames>
       <UnderlyingIndexName>Cars_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="35" parent="11" name="Cars_idBrand_fkey">
+    <foreign-key id="36" parent="12" name="Cars_idBrand_fkey">
       <ObjectId>16406</ObjectId>
       <ColNames>idBrand</ColNames>
       <RefTableId>16393</RefTableId>
@@ -167,7 +170,7 @@
       <RefKeyName>Brands_pkey</RefKeyName>
       <RefColNames>idBrand</RefColNames>
     </foreign-key>
-    <foreign-key id="36" parent="11" name="Cars_idCarDesc_fkey">
+    <foreign-key id="37" parent="12" name="Cars_idCarDesc_fkey">
       <ObjectId>16451</ObjectId>
       <ColNames>idCarDesc</ColNames>
       <RefTableId>16443</RefTableId>
@@ -176,36 +179,36 @@
       <RefKeyName>CarDesc_pkey</RefKeyName>
       <RefColNames>idDesc</RefColNames>
     </foreign-key>
-    <column id="37" parent="12" name="idEmpCar">
+    <column id="38" parent="13" name="idEmpCar">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>566</StateNumber>
     </column>
-    <column id="38" parent="12" name="idCar">
+    <column id="39" parent="13" name="idCar">
       <Position>2</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>566</StateNumber>
     </column>
-    <column id="39" parent="12" name="idEmp">
+    <column id="40" parent="13" name="idEmp">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>566</StateNumber>
     </column>
-    <index id="40" parent="12" name="EmpCar_pkey">
+    <index id="41" parent="13" name="EmpCar_pkey">
       <ObjectId>16467</ObjectId>
       <ColNames>idEmpCar</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="41" parent="12" name="EmpCar_pkey">
+    <key id="42" parent="13" name="EmpCar_pkey">
       <ObjectId>16468</ObjectId>
       <ColNames>idEmpCar</ColNames>
       <UnderlyingIndexName>EmpCar_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="42" parent="12" name="EmpCar_idCar_fkey">
+    <foreign-key id="43" parent="13" name="EmpCar_idCar_fkey">
       <ObjectId>16469</ObjectId>
       <ColNames>idCar</ColNames>
       <RefTableId>16401</RefTableId>
@@ -214,7 +217,7 @@
       <RefKeyName>Cars_pkey</RefKeyName>
       <RefColNames>idCar</RefColNames>
     </foreign-key>
-    <foreign-key id="43" parent="12" name="EmpCar_idEmp_fkey">
+    <foreign-key id="44" parent="13" name="EmpCar_idEmp_fkey">
       <ObjectId>16474</ObjectId>
       <ColNames>idEmp</ColNames>
       <RefTableId>16456</RefTableId>
@@ -223,154 +226,216 @@
       <RefKeyName>Employees_pkey</RefKeyName>
       <RefColNames>idEmp</RefColNames>
     </foreign-key>
-    <column id="44" parent="13" name="idEmp">
+    <column id="45" parent="14" name="idEmp">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>565</StateNumber>
     </column>
-    <column id="45" parent="13" name="name">
+    <column id="46" parent="14" name="name">
       <Position>2</Position>
       <DataType>text|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>565</StateNumber>
     </column>
-    <column id="46" parent="13" name="salary">
+    <column id="47" parent="14" name="salary">
       <Position>3</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
       <StateNumber>565</StateNumber>
     </column>
-    <index id="47" parent="13" name="Employees_pkey">
+    <index id="48" parent="14" name="Employees_pkey">
       <ObjectId>16462</ObjectId>
       <ColNames>idEmp</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="48" parent="13" name="Employees_pkey">
+    <key id="49" parent="14" name="Employees_pkey">
       <ObjectId>16463</ObjectId>
       <ColNames>idEmp</ColNames>
       <UnderlyingIndexName>Employees_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="49" parent="14" name="idbrand">
+    <column id="50" parent="15" name="idbrand">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>567</StateNumber>
+      <StateNumber>617</StateNumber>
     </column>
-    <column id="50" parent="14" name="localization">
-      <Position>2</Position>
-      <DataType>varchar(255)|0</DataType>
-      <StateNumber>567</StateNumber>
-    </column>
-    <column id="51" parent="14" name="name">
+    <column id="51" parent="15" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
-      <StateNumber>567</StateNumber>
+      <StateNumber>617</StateNumber>
     </column>
-    <index id="52" parent="14" name="brands_pkey">
-      <ObjectId>16485</ObjectId>
+    <index id="52" parent="15" name="brands_pkey">
+      <ObjectId>16603</ObjectId>
       <ColNames>idbrand</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="53" parent="14" name="brands_pkey">
-      <ObjectId>16486</ObjectId>
+    <key id="53" parent="15" name="brands_pkey">
+      <ObjectId>16604</ObjectId>
       <ColNames>idbrand</ColNames>
       <UnderlyingIndexName>brands_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="54" parent="15" name="iddesc">
+    <column id="54" parent="16" name="iddesc">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>568</StateNumber>
+      <StateNumber>618</StateNumber>
     </column>
-    <column id="55" parent="15" name="color">
+    <column id="55" parent="16" name="color">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
-      <StateNumber>568</StateNumber>
+      <StateNumber>618</StateNumber>
     </column>
-    <column id="56" parent="15" name="idcar">
+    <column id="56" parent="16" name="year">
       <Position>3</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>568</StateNumber>
+      <StateNumber>618</StateNumber>
     </column>
-    <column id="57" parent="15" name="year">
+    <column id="57" parent="16" name="idcar">
       <Position>4</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>568</StateNumber>
+      <StateNumber>618</StateNumber>
     </column>
-    <index id="58" parent="15" name="cardesc_pkey">
-      <ObjectId>16490</ObjectId>
+    <index id="58" parent="16" name="cardesc_pkey">
+      <ObjectId>16608</ObjectId>
       <ColNames>iddesc</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="59" parent="15" name="cardesc_pkey">
-      <ObjectId>16491</ObjectId>
+    <key id="59" parent="16" name="cardesc_pkey">
+      <ObjectId>16609</ObjectId>
       <ColNames>iddesc</ColNames>
       <UnderlyingIndexName>cardesc_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="60" parent="16" name="idcar">
+    <foreign-key id="60" parent="16" name="fk_p3e0hhg74pycfh7dvva3nnl7i">
+      <ObjectId>16635</ObjectId>
+      <ColNames>idcar</ColNames>
+      <RefTableId>16605</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>cardesc</RefTableName>
+      <RefKeyName>cardesc_pkey</RefKeyName>
+      <RefColNames>iddesc</RefColNames>
+    </foreign-key>
+    <column id="61" parent="17" name="idcar">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>569</StateNumber>
+      <StateNumber>619</StateNumber>
     </column>
-    <index id="61" parent="16" name="cars_pkey">
-      <ObjectId>16495</ObjectId>
+    <column id="62" parent="17" name="idbrand">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>619</StateNumber>
+    </column>
+    <column id="63" parent="17" name="idcardesc">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>619</StateNumber>
+    </column>
+    <index id="64" parent="17" name="cars_pkey">
+      <ObjectId>16613</ObjectId>
       <ColNames>idcar</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="62" parent="16" name="cars_pkey">
-      <ObjectId>16496</ObjectId>
+    <key id="65" parent="17" name="cars_pkey">
+      <ObjectId>16614</ObjectId>
       <ColNames>idcar</ColNames>
       <UnderlyingIndexName>cars_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="63" parent="17" name="idempcar">
+    <foreign-key id="66" parent="17" name="fk_s2ak2iiy5h587lpe8s3x3gi8">
+      <ObjectId>16640</ObjectId>
+      <ColNames>idbrand</ColNames>
+      <RefTableId>16597</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>brands</RefTableName>
+      <RefKeyName>brands_pkey</RefKeyName>
+      <RefColNames>idbrand</RefColNames>
+    </foreign-key>
+    <foreign-key id="67" parent="17" name="fk_igmt6h4q2cm114v0nxdgnomnu">
+      <ObjectId>16645</ObjectId>
+      <ColNames>idcardesc</ColNames>
+      <RefTableId>16605</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>cardesc</RefTableName>
+      <RefKeyName>cardesc_pkey</RefKeyName>
+      <RefColNames>iddesc</RefColNames>
+    </foreign-key>
+    <column id="68" parent="18" name="idempcar">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>570</StateNumber>
+      <StateNumber>620</StateNumber>
     </column>
-    <index id="64" parent="17" name="empcar_pkey">
-      <ObjectId>16500</ObjectId>
+    <index id="69" parent="18" name="empcar_pkey">
+      <ObjectId>16618</ObjectId>
       <ColNames>idempcar</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="65" parent="17" name="empcar_pkey">
-      <ObjectId>16501</ObjectId>
+    <key id="70" parent="18" name="empcar_pkey">
+      <ObjectId>16619</ObjectId>
       <ColNames>idempcar</ColNames>
       <UnderlyingIndexName>empcar_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="66" parent="18" name="idemp">
+    <column id="71" parent="19" name="idemp">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>571</StateNumber>
+      <StateNumber>621</StateNumber>
     </column>
-    <column id="67" parent="18" name="name">
+    <column id="72" parent="19" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
-      <StateNumber>571</StateNumber>
+      <StateNumber>621</StateNumber>
     </column>
-    <column id="68" parent="18" name="salary">
+    <column id="73" parent="19" name="salary">
       <Position>3</Position>
       <DataType>integer|0</DataType>
-      <StateNumber>571</StateNumber>
+      <StateNumber>621</StateNumber>
     </column>
-    <index id="69" parent="18" name="employees_pkey">
-      <ObjectId>16505</ObjectId>
+    <index id="74" parent="19" name="employees_pkey">
+      <ObjectId>16623</ObjectId>
       <ColNames>idemp</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="70" parent="18" name="employees_pkey">
-      <ObjectId>16506</ObjectId>
+    <key id="75" parent="19" name="employees_pkey">
+      <ObjectId>16624</ObjectId>
       <ColNames>idemp</ColNames>
       <UnderlyingIndexName>employees_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <column id="76" parent="20" name="employeesentities_idemp">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>616</StateNumber>
+    </column>
+    <column id="77" parent="20" name="carsentities_idcar">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>616</StateNumber>
+    </column>
+    <foreign-key id="78" parent="20" name="fk_cpu8g15aqtnco7p22icg2py5s">
+      <ObjectId>16630</ObjectId>
+      <ColNames>employeesentities_idemp</ColNames>
+      <RefTableId>16620</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>employees</RefTableName>
+      <RefKeyName>employees_pkey</RefKeyName>
+      <RefColNames>idemp</RefColNames>
+    </foreign-key>
+    <foreign-key id="79" parent="20" name="fk_i0k9dsy3ncvamnd8akcvwbae4">
+      <ObjectId>16625</ObjectId>
+      <ColNames>carsentities_idcar</ColNames>
+      <RefTableId>16610</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>cars</RefTableName>
+      <RefKeyName>cars_pkey</RefKeyName>
+      <RefColNames>idcar</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>

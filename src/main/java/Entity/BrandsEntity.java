@@ -8,7 +8,6 @@ import java.util.List;
 public class BrandsEntity {
     private int idBrand;
     private String name;
-    private String localization;
     public List<CarsEntity> carsEntities;
 
     @Id
@@ -32,16 +31,6 @@ public class BrandsEntity {
         this.name = name;
     }
 
-    @Basic
-    @Column(name = "localization")
-    public String getLocalization() {
-        return localization;
-    }
-
-    public void setLocalization(String localization) {
-        this.localization = localization;
-    }
-
     @OneToMany(mappedBy = "brandsEntity")
     public List<CarsEntity> getCarsEntities() {
         return carsEntities;
@@ -60,16 +49,14 @@ public class BrandsEntity {
 
         if (idBrand != that.idBrand) return false;
         if (name != null ? !name.equals(that.name) : that.name != null) return false;
-        if (localization != null ? !localization.equals(that.localization) : that.localization != null) return false;
-
-        return true;
+        return carsEntities != null ? carsEntities.equals(that.carsEntities) : that.carsEntities == null;
     }
 
     @Override
     public int hashCode() {
         int result = idBrand;
         result = 31 * result + (name != null ? name.hashCode() : 0);
-        result = 31 * result + (localization != null ? localization.hashCode() : 0);
+        result = 31 * result + (carsEntities != null ? carsEntities.hashCode() : 0);
         return result;
     }
 }
