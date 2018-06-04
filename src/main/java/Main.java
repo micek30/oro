@@ -1,8 +1,10 @@
+import Engine.EntityCore;
 import Engine.FillBrandsDatabase;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,10 +12,10 @@ public class Main {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
 
-        int which = 0;
-
-        while(which != 9){
-            switch (which){
+        int choice = 0;
+        Scanner odczyt = new Scanner(System.in);
+        while(choice != 9){
+            switch (choice){
                 case 0:
                     showMenu();
                     break;
@@ -49,7 +51,7 @@ public class Main {
                 default:
                     break;
             }
-            which = odczyt.nextInt();
+            choice = odczyt.nextInt();
         }
 
         entityManager.close();
