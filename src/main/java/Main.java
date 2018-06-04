@@ -7,7 +7,7 @@ public class Main {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("NewPersistenceUnit");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-
+System.out.print("dasd");
         entityManager.close();
         entityManagerFactory.close();
     }
