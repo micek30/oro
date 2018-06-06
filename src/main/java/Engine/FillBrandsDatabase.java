@@ -4,9 +4,9 @@ import Entity.BrandsEntity;
 
 public class FillBrandsDatabase {
 
+    public String[] brandName = {"Ford", "Skoda", "Opel", "Seat", "BMW", "Fiat", "Audi", "Renault", "Citroen", "Nissan", "Chevrolet", "Mercedes", "Mini", "Hyundai", "Kia", "Suzuki", "Dacia", "Jaguar", "VW", "Alfa Romeo"};
 
     public BrandsEntity fillBrandsDatabase(){
-        String[] brandName = {"Ford", "Skoda", "Opel", "Seat", "BMW", "Fiat", "Audi", "Renault", "Citroen", "Nissan", "Chevrolet", "Mercedes", "Mini", "Hyundai", "Kia", "Suzuki", "Dacia", "Jaguar", "VW", "Alfa Romeo"};
 
         StringBuilder desc = new StringBuilder();
         desc.append("BMW");
@@ -30,5 +30,19 @@ public class FillBrandsDatabase {
 
 
         return brandsEntity;
+    }
+
+    public void randBrands(){
+        EntityCore entityCore = new EntityCore();
+
+        entityCore.start();
+
+        for (String aBrandsName : brandName) {
+            BrandsEntity brandsEntity = new BrandsEntity();
+            brandsEntity.setName(aBrandsName);
+            entityCore.getEntityManager().persist(brandsEntity);
+        }
+
+        entityCore.end();
     }
 }

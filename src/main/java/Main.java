@@ -1,5 +1,6 @@
 import Engine.EntityCore;
 import Engine.FillBrandsDatabase;
+import Engine.FillEmpDatabase;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -21,11 +22,11 @@ public class Main {
                     break;
                 case 1:
                     FillBrandsDatabase fillBrandsDatabase= new FillBrandsDatabase() {};
-                    fillBrandsDatabase.fillBrandsDatabase();
+                    fillBrandsDatabase.randBrands();
                     break;
                 case 2:
-                    FillDrinkDatabase fillDrinkDatabase = new FillDrinkDatabase();
-                    fillDrinkDatabase.randDrink();
+                    FillEmpDatabase fillEmpDatabase = new FillEmpDatabase();
+                    fillEmpDatabase.randEmp();
                     showMenu();
                     break;
                 case 3:
