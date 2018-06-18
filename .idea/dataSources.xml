@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="PostgreSQL - postgres@localhost" uuid="38218880-8836-4a91-b845-01309090c13b">
+    <data-source source="LOCAL" name="lxhpnrqk@stampy.db.elephantsql.com" uuid="344cc7f8-b2ab-42ea-843e-4f3a987510d0">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+      <jdbc-url>jdbc:postgresql://stampy.db.elephantsql.com:5432/lxhpnrqk</jdbc-url>
       <driver-properties>
         <property name="ApplicationName" value="DataGrip" />
       </driver-properties>

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Cars", schema = "public", catalog = "postgres")
+@Table(name = "Cars", schema = "public", catalog = "lxhpnrqk")
 public class CarsEntity {
     private int idCar;
     private BrandsEntity brandsEntity;

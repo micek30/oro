@@ -29,26 +29,26 @@ public class Main {
                     fillEmpDatabase.randEmp();
                     showMenu();
                     break;
-                case 3:
-                    FillOrderDatabase fillOrderDatabase = new FillOrderDatabase();
-                    System.out.println("\nPodaj ile chcesz wprowadzic zamowien");
-                    int n = odczyt.nextInt();
-                    fillOrderDatabase.makeOrder(n);
-                    showMenu();
-                    break;
-                case 4:
-                    selectOrder();
-                    showMenu();
-                    break;
-                case 5:
-                    selectOrderWhere();
-                    showMenu();
-                    break;
-                case 6:
-                    EntityCore entityCore = new EntityCore();
-                    entityCore.start();
-                    entityCore.end();
-                    break;
+//                case 3:
+//                    FillOrderDatabase fillOrderDatabase = new FillOrderDatabase();
+//                    System.out.println("\nPodaj ile chcesz wprowadzic zamowien");
+//                    int n = odczyt.nextInt();
+//                    fillOrderDatabase.makeOrder(n);
+//                    showMenu();
+//                    break;
+//                case 4:
+//                    selectOrder();
+//                    showMenu();
+//                    break;
+//                case 5:
+//                    selectOrderWhere();
+//                    showMenu();
+//                    break;
+//                case 6:
+//                    EntityCore entityCore = new EntityCore();
+//                    entityCore.start();
+//                    entityCore.end();
+//                    break;
                 default:
                     break;
             }

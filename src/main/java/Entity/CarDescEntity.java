@@ -3,7 +3,7 @@ package Entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "CarDesc", schema = "public", catalog = "postgres")
+@Table(name = "CarDesc", schema = "public", catalog = "lxhpnrqk")
 public class CarDescEntity {
     private int idDesc;
     private CarDescEntity carDescEntity;
