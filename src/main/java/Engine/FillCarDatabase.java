@@ -25,7 +25,7 @@ public class FillCarDatabase extends Randoms {
         desc.append(", ").append(color[idx]);
 
         carDescEntity.setColor(desc.toString());
-
+        carDescEntity.setYear(randoms.randInt(2000,2018));
 
         EntityCore entityCore = new EntityCore();
         entityCore.start();

@@ -75,4 +75,14 @@ public class EmployeesEntity {
         result = 31 * result + salary;
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "EmployeesEntity{" +
+                "idEmp=" + idEmp +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+//                ", carsEntities=" + carsEntities.toString() +
+                '}';
+    }
 }

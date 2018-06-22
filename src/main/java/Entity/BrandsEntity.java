@@ -60,4 +60,13 @@ public class BrandsEntity {
         result = 31 * result + (carsEntities != null ? carsEntities.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "BrandsEntity{" +
+                "idBrand=" + idBrand +
+                ", name='" + name + '\'' +
+//                ", carsEntities=" + carsEntities.toString() +
+                '}';
+    }
 }

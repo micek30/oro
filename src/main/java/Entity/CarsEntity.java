@@ -70,4 +70,14 @@ public class CarsEntity {
     public int hashCode() {
         return idCar;
     }
+
+    @Override
+    public String toString() {
+        return "CarsEntity{" +
+                "idCar=" + idCar +
+//                ", brandsEntity=" + brandsEntity.toString() +
+//                ", carDescEntity=" + carDescEntity.toString() +
+//                ", employeesEntities=" + employeesEntities.toString() +
+                '}';
+    }
 }
