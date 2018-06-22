@@ -4,12 +4,14 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Employees", schema = "public", catalog = "lxhpnrqk")
+//@Table(name = "Employees", schema = "public", catalog = "lxhpnrqk")
+@Table(name = "Employees", schema = "public", catalog = "postgres")
 public class EmployeesEntity {
     private int idEmp;
     private String name;
     private int salary;
 
+    //public List<CarsEntity> carsEntities;
     public List<CarsEntity> carsEntities;
 
     @Id
@@ -43,7 +45,7 @@ public class EmployeesEntity {
         this.salary = salary;
     }
 
-    @ManyToMany
+    @ManyToMany//(mappedBy = "employeesEntities")
     public List<CarsEntity> getCarsEntities() {
         return carsEntities;
     }

@@ -4,11 +4,13 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Cars", schema = "public", catalog = "lxhpnrqk")
+//@Table(name = "Cars", schema = "public", catalog = "lxhpnrqk")
+@Table(name = "Cars", schema = "public", catalog = "postgres")
 public class CarsEntity {
     private int idCar;
     private BrandsEntity brandsEntity;
     private CarDescEntity carDescEntity;
+
 
     public List<EmployeesEntity> employeesEntities;
 

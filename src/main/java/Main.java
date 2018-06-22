@@ -1,5 +1,5 @@
-import Engine.EntityCore;
 import Engine.FillBrandsDatabase;
+import Engine.FillCarDatabase;
 import Engine.FillEmpDatabase;
 
 import javax.persistence.EntityManager;
@@ -15,7 +15,7 @@ public class Main {
 
         int choice = 0;
         Scanner odczyt = new Scanner(System.in);
-        while(choice != 9){
+        while(choice != 4){
             switch (choice){
                 case 0:
                     showMenu();
@@ -23,28 +23,25 @@ public class Main {
                 case 1:
                     FillBrandsDatabase fillBrandsDatabase= new FillBrandsDatabase() {};
                     fillBrandsDatabase.randBrands();
-                    break;
-                case 2:
+
                     FillEmpDatabase fillEmpDatabase = new FillEmpDatabase();
+                    fillEmpDatabase.oneEmp();
+                    FillCarDatabase fillCarDatabase = new FillCarDatabase();
+                    fillCarDatabase.oneCars();
+
                     fillEmpDatabase.randEmp();
+                    fillCarDatabase.randCars();
                     showMenu();
                     break;
-//                case 3:
-//                    FillOrderDatabase fillOrderDatabase = new FillOrderDatabase();
-//                    System.out.println("\nPodaj ile chcesz wprowadzic zamowien");
-//                    int n = odczyt.nextInt();
-//                    fillOrderDatabase.makeOrder(n);
-//                    showMenu();
-//                    break;
-//                case 4:
+//                case 2:
 //                    selectOrder();
 //                    showMenu();
 //                    break;
-//                case 5:
+//                case 3:
 //                    selectOrderWhere();
 //                    showMenu();
 //                    break;
-//                case 6:
+//                case 4:
 //                    EntityCore entityCore = new EntityCore();
 //                    entityCore.start();
 //                    entityCore.end();
@@ -61,13 +58,10 @@ public class Main {
 
     private static void showMenu(){
         System.out.println("Menu: ");
-        System.out.println("0 - Menu: ");
-        System.out.println("1 - Fill database with brands");
-        System.out.println("2 - Fill database with cars");
-        System.out.println("3 - Fill database with employees");
-        System.out.println("4 - Select cars");
-        System.out.println("5 - Select employees with WHERE clause");
-        System.out.println("9 - Finish program");
+        System.out.println("1 - Fill database");
+        System.out.println("2 - Select cars");
+        System.out.println("3 - Select employees with WHERE clause");
+        System.out.println("4 - Finish program");
         System.out.print("\n\nEnter your choice: ");
     }
 }

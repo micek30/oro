@@ -6,15 +6,20 @@
         <class>Entity.BrandsEntity</class>
         <class>Entity.CarDescEntity</class>
         <class>Entity.CarsEntity</class>
-        <class>Entity.EmpCarEntity</class>
         <class>Entity.EmployeesEntity</class>
         <properties>
-            <property name="hibernate.connection.url" value="jdbc:postgresql://stampy.db.elephantsql.com:5432/lxhpnrqk"/>
-            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
-            <property name="hibernate.connection.username" value="lxhpnrqk"/>
-            <property name="hibernate.connection.password" value="eaEpuMG-9_6KpI2W8NdfL9bY7mZAsMg_"/>
+            <!--<property name="hibernate.connection.url" value="jdbc:postgresql://stampy.db.elephantsql.com:5432/lxhpnrqk"/>-->
+            <!--<property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>-->
+            <!--<property name="hibernate.connection.username" value="lxhpnrqk"/>-->
+            <!--<property name="hibernate.connection.password" value="eaEpuMG-9_6KpI2W8NdfL9bY7mZAsMg_"/>-->
 
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/postgres"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="postgres"/>
+            <property name="hibernate.connection.password" value="postgres"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="release"/> <!--update albo create-->
+
 
         </properties>
     </persistence-unit>
